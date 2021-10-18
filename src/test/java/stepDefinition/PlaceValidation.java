@@ -40,6 +40,7 @@ public class PlaceValidation extends Utils { //the class is extending util class
 
         //requestSpecification() method is called from Utils class and addplacepayload has parameters passing from the featur file
         res = given().spec(requestSpecification()).body(data.addPlacePayLoad(name,language,address));
+        System.out.println("This is practice line fo GIT learning");
     }
 
     @When("User calls {string} with {string} http request")
